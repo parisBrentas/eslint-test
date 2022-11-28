@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/testlib/sublib/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "eslintConfig": "./.eslintrc.js",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/testlib/sublib/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
